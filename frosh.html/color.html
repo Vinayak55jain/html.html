@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+ </head>
+<body id="body">
+    <script>
+        function setup()
+        {
+        createCanvas( windowWidth,windowHeight)
+         document.getElementById('body').style.backgroundColor="red";
+        }
+    
+
+
+var foo = new p5.SpeechRec(); // speech recognition object (will prompt for mic access)
+foo.interimResults=true; 
+foo.onResult = showResult; // bind callback function to trigger when speech is recognized
+foo.start(); // start listening
+
+function showResult()
+{
+  console.log(foo.resultString.split('').pop()); // log the result
+  document.getElementById('body').style.backgroundColor=foo.resultString.split(' ').pop();
+}
+    </script>
+      
+</body>
+</html>

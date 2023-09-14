@@ -1,0 +1,101 @@
+<style>
+    button{
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+    }
+    .uber{
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        border-color: black;
+        border-style: solid;
+        height: 26px;
+        width: 80px;
+        font-family:monospace;
+        
+    }
+    .uber:hover{
+        box-shadow:5px 2px 5px black(0,0,0,0.5) ;
+    }
+    .uber:active{
+    opacity: 0.7;
+    width: 80.5px;        
+    }
+
+    .amazon{
+        background-color: rgb(255, 216, 20);
+        color: black;
+        font-size: 10px;
+        border-color: rgb(211, 138, 11);
+        height: 26px;
+        width: 100px;
+        border-style: solid;
+        border-radius: 18px;
+ } 
+ .amazon:hover{
+    opacity: 0.8s;
+ }
+ .amazon:active{
+    font-family: sans-serif;
+    width: 102px;
+    background-color: rgb(211, 138, 11);
+    border-color:  rgb(255, 216, 20);
+ }
+   .git{
+    background-color: rgb(46, 167, 79);
+    color: white;
+    font-size: 10px;
+    border-color: white;
+    height: 26px;
+    width: 60px;
+    border-radius:8px ;
+    border-style: solid;
+    font-family: serif;
+ }
+ .git:hover{
+    opacity: 0.5;
+    background-color: white;
+    border-color: rgb(46, 167, 79); 
+    color: rgb(46, 167, 79);
+ }
+ .git:active{
+    width:60.5px ;
+    font-family:serif ;
+    background-color: white;
+    border-color: rgb(46, 167, 79); 
+    color: rgb(46, 167, 79);
+ }
+ .boot{
+    background-color: rgb(121,82, 179);
+    color:white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    height:26px ;
+    width: 80px;
+    font-size: xx-small;
+    font-weight: 100px;
+ }.boot:hover{
+    
+    font-family: fantasy;
+ }.boot:active{
+    font-family: fantasy;
+    box-shadow: 3px 2px 2px black;
+    border-color: rgb(144, 14, 231);
+ }
+
+ .download{
+    background-color: white;
+    color:rgb(121,82, 179); 
+    border-color:rgb(121,82, 179); 
+    border-style: solid;
+    border-radius: 2px;
+    font-family: cursive;
+ }
+ .download:active{
+    background-color:rgb(121,82, 179) ;
+    color: white;
+ }
+
+
+</style>
